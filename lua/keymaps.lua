@@ -25,3 +25,11 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { noremap = true, silent = t
 
 -- Diagnostics
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { noremap = true, silent = true })
+
+-- Lazy plugin manager
+vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { noremap = true, silent = true, desc = "Open Lazy" })
+vim.keymap.set("n", "<C-p>", function()
+  vim.schedule(function()
+    vim.cmd("Lazy")
+  end)
+end, { noremap = true, silent = true, desc = "Open Lazy" })

@@ -6,7 +6,6 @@ return {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
     { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Live grep" },
     { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Find buffers" },
-    { "<C-p>", "<cmd>Telescope find_files<CR>", desc = "Find files" },
   },
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
